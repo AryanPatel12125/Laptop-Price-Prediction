@@ -252,7 +252,22 @@ if st.button("Predict"):
        }
        # Create a DataFrame from user inputs
        user_df = pd.DataFrame(user_data)
-       
+       st.markdown(
+              """
+              <style>
+                     body {
+                            background-color: #f0f0f0;  /* Set your desired background color */
+                     }
+                     .css-class-name {
+                     /* Add your custom CSS styles here */
+                     color: #333;
+                     font-size: 18px;
+                     }
+              </style>
+              """,
+              unsafe_allow_html=True
+       )
+
 
 # Example usage
        enc = LabelEncoder()
