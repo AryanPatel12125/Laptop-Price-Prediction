@@ -2,8 +2,6 @@
 import streamlit as st
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
-import sklearn
-from sklearn.compose import ColumnTransformer
 import pickle
 
 with open('model.pkl','rb') as file:
